@@ -20,3 +20,6 @@ th{
 tr{
     border: 1px solid orange !important;
 }
+select option{
+    width: 500px;
+}

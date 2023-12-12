@@ -74,8 +74,8 @@
                     <tr>
                     <td scope="row"><?php echo $hotels_array['name'] ?></td>
                     <td><?php echo $hotels_array['description'] ?></td>
-                    <td><?php echo $hotels_array['vote'] ?></td>
                     <td><?php echo $hotels_array['parking'] ?></td>
+                    <td><?php echo $hotels_array['vote'] ?></td>
                     <td><?php echo $hotels_array['distance_to_center'] ?></td>
                     </tr>
                     <tr>
@@ -83,6 +83,17 @@
 
                 <?php }?> 
             </table>
+
+            <form action="">
+            <select class="mt-5">
+                <option selected></option>
+                <option value="1">1</option>
+                <option value="2">1</option>
+                <option value="3">3</option>
+                <option value="3">4</option>
+                <option value="3">5</option>
+            </select>
+            </form>
 
     
  

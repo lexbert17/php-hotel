@@ -1,4 +1,4 @@
-<?php
+<?php 
 
     $hotels = [
 
@@ -40,6 +40,7 @@
 
     ];
 
+
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +53,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php foreach ($hotels as $key => $hotels_array) { ?>
+        <section>
+            <h2> <?php echo $hotels_array['name'] ?></h2>
+            <p><?php echo $hotels_array['description'] ?></p>
+            <p>voto : <?php echo $hotels_array['vote'] ?></p>
+            <p>parcheggio : <?php echo $hotels_array['parking'] ?></p>
+            <p>distanza dalla città : <?php echo $hotels_array['distance_to_center'] ?> km.</p>
+        </section>
+    <?php }?>    
 </body>
 </html>

@@ -53,14 +53,40 @@
     <title>Document</title>
 </head>
 <body>
-    <?php foreach ($hotels as $key => $hotels_array) { ?>
-        <section>
-            <h2> <?php echo $hotels_array['name'] ?></h2>
-            <p><?php echo $hotels_array['description'] ?></p>
-            <p>voto : <?php echo $hotels_array['vote'] ?></p>
-            <p>parcheggio : <?php echo $hotels_array['parking'] ?></p>
-            <p>distanza dalla città : <?php echo $hotels_array['distance_to_center'] ?> km.</p>
-        </section>
-    <?php }?>    
+<section>   
+    <div class="ms_container"> 
+        <h1 class="text-center mb-5 mt-3">PHP Hotel</h1>
+
+            <table class="table  table-striped">
+                <thead>
+                    <tr>
+                    <th scope="col">Nome Hotel</th>
+                    <th scope="col">Descrizione</th>
+                    <th scope="col">Parcheggio</th>
+                    <th scope="col">Voto</th>
+                    <th scope="col">Distanza dal centro</th>
+                    </tr>
+                </thead>
+
+                <?php foreach ($hotels as $key => $hotels_array) { ?>
+
+                <tbody>
+                    <tr>
+                    <td scope="row"><?php echo $hotels_array['name'] ?></td>
+                    <td><?php echo $hotels_array['description'] ?></td>
+                    <td><?php echo $hotels_array['vote'] ?></td>
+                    <td><?php echo $hotels_array['parking'] ?></td>
+                    <td><?php echo $hotels_array['distance_to_center'] ?></td>
+                    </tr>
+                    <tr>
+                </tbody>
+
+                <?php }?> 
+            </table>
+
+    
+ 
+    </div>
+</section>      
 </body>
 </html>

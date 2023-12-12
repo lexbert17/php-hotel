@@ -1,0 +1,22 @@
+body{
+ 
+}
+.ms_container{
+    margin: auto;
+    color: white;
+}
+h1{
+    color: white;
+    background-color: orange;
+}
+table{
+    border: 1px solid orange;
+    color: white;
+}
+th{
+    background-color: orange !important;
+    color: white;
+}
+tr{
+    border: 1px solid orange !important;
+}
